@@ -1,0 +1,31 @@
+/* Hanya sembunyikan teks Digital Library saat sidebar collapse */
+body.side-nav-opened .navbar-brand .brand-text {
+    display: none;
+}
+
+/* Logo tetap terlihat */
+body.side-nav-opened .navbar-brand img {
+    margin-right: 0; /* optional, biar logo ga terlalu ke kanan */
+    transition: all 0.3s;
+}
+
+/* Animasi halus untuk teks */
+.brand-text {
+    transition: all 0.3s;
+}
+
+
+/* bikin semua cell di body tabel rata kiri */
+table.dataTable tbody td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* tapi khusus kolom nomor & aksi biar tetap di tengah */
+table.dataTable tbody td:nth-child(1),
+table.dataTable tbody td:last-child {
+    text-align: center;
+}
+
+
+
